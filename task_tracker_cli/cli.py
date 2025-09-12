@@ -9,12 +9,15 @@ def add_task(task):
         json.dump(data, file, indent=4)
 
 #Listing all tasks
-
+def list_tasks():
+    with open('data.json','r') as file:
+        data= json.load(file)
+        for task in data['tasks']:
+            print(task)
 
 if __name__ == "__main__":
-    
-    add_task("Apprendre Git")
 
+    list_tasks()
 
     with open('data.json', 'r') as f: 
         data=json.load(f)
