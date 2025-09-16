@@ -3,12 +3,14 @@
 
 # contains all CLI code
 import json
+import sys
 #call the .bat file to run the CLI and make it globally accessible
 import os
-os.system('task-cli.bat')
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = 'data.json'
 
+
+    
 #Adding a new task
 def add_task(task):
     with open('data.json', 'r+') as file:
@@ -45,6 +47,7 @@ def remove_tasks():
 if __name__ == "__main__":
     with open('data.json', 'r') as f: 
         data=json.load(f)
-        print(data)
+    for i in data['tasks']:
     
-    
+        print (i)
+   

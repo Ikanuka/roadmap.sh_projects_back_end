@@ -11,6 +11,7 @@
         Including working with the filesystem
         Handling user inputs
         Building a simple application
+        The CLI will be globally accessible
 
 
 

@@ -1,4 +1,10 @@
 {
+
+    "id": 1,
+    "desciption": "My first task",
+    "status": "todo",
+    "created_at": "2023-10-01 10:00:00",
+    "updated_at": "2023-10-01 10:00:00",
     "tasks": [
         "Faire un CLI en Python",
         "Apprendre Git",
@@ -6,4 +12,5 @@
         "oui",
         "Aujourd'hui c'est python"
     ]
+
 }
